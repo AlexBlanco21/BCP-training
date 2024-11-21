@@ -24,22 +24,22 @@ Composite Actions es un proyecto diseñado para realizar una serie de acciones c
     ```sh
     npm install
     ```
-    o
-    ```sh
-    pip install -r requirements.txt
-    ```
 
 ## Uso
 1. Configurar las acciones en el archivo de configuración.
 2. Ejecutar el script principal para iniciar las acciones:
     ```sh
-    npm install
+    # Realizar instalación
     npm ci
+
+    # Ejecutar pruebas
     npm run test
 
-    # Build
+    # Construir la aplicación
     npm run build
 
+    # Ejecutar la aplicación
+    npm run preview
     ```
 
 ## Contribución
