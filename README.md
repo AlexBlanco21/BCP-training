@@ -4,15 +4,16 @@
 Composite Actions es un proyecto diseñado para realizar una serie de acciones compuestas de manera eficiente y organizada. Este proyecto permite la ejecución de múltiples tareas en secuencia o en paralelo, facilitando la automatización de procesos complejos.
 
 ## Características
-- **Ejecución Secuencial**: Permite ejecutar acciones en un orden específico.
-- **Ejecución Paralela**: Permite ejecutar acciones simultáneamente para optimizar el tiempo.
-- **Configuración Flexible**: Las acciones pueden ser configuradas y personalizadas según las necesidades del usuario.
-- **Manejo de Errores**: Incluye mecanismos para manejar errores y excepciones durante la ejecución de las acciones.
+- **Introducción a GitHub Actions**: Permite automatizar tareas y procesos en GitHub.
+- **GitHub Actions y CI/CD**: Facilita la integración continua y la entrega continua.
+- **Que es un Composite Action**: Permite agrupar acciones en un solo archivo.
+- **Estructura de una Composite Action**: Define la estructura de un Composite Action.
 
 ## Requisitos
-- **Lenguaje de Programación**: Especificar el lenguaje utilizado (por ejemplo, Python, JavaScript, etc.).
-- **Dependencias**: Listar las bibliotecas o frameworks necesarios para ejecutar el proyecto.
-- **Sistema Operativo**: Indicar los sistemas operativos compatibles.
+- **Lenguaje de Programación**: TypeScript, JavaScript, Bash Script.
+- **Herramientas**: Git, GitHub, Visual Studio Code, Docker.
+- **Dependencias**: React, Node.js, npm
+- **Sistema Operativo**: MacOS, Windows, Linux
 
 ## Instalación
 1. Clonar el repositorio:
@@ -49,7 +50,7 @@ Composite Actions es un proyecto diseñado para realizar una serie de acciones c
     ```sh
     git commit -m "Agregar nueva característica"
     ```
-4. Enviar un pull request para revisión.
-
-## Licencia
-Este proyecto está licenciado bajo la Licencia MIT. Consulte el archivo LICENSE para obtener más detalles.
+4. Hacer push a la rama:
+    ```sh
+    git push -u origin feature/nueva-caracteristica
+    ```
