@@ -33,11 +33,13 @@ Composite Actions es un proyecto diseñado para realizar una serie de acciones c
 1. Configurar las acciones en el archivo de configuración.
 2. Ejecutar el script principal para iniciar las acciones:
     ```sh
-    npm start
-    ```
-    o
-    ```sh
-    python main.py
+    npm install
+    npm ci
+    npm run test
+
+    # Build
+    npm run build
+
     ```
 
 ## Contribución
