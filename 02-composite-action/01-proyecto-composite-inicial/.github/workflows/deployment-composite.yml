@@ -1,0 +1,35 @@
+# El nombre del flujo de trabajo (CI en este caso).
+name: Despliegue de aplicacion
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: 
+
+jobs: 
+  test: 
+    runs-on: ubuntu-latest 
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    # add code for loading and testing the action
+    
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: load & test the action
+      uses: ./.github/actions/node-ci
+      
+    - name: Deploy
+      run: echo "Deploying!"
