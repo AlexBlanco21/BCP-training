@@ -1,0 +1,13 @@
+name: "Mi Composite actions"
+description: "Este es un ejemplo de como crear una composite action"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Install Dependencies
+      run: npm ci
+      shell: bash
+    
+    - name: Run Tests
+      run: npm test
+      shell: bash

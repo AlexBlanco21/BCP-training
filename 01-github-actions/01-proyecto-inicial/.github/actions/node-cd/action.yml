@@ -1,0 +1,22 @@
+name: Deployment rect composite actions
+description: Esta composite actions se encarga de realizar el deployment de la aplicación
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Install dependencies
+      run: npm ci
+      shell: bash
+
+    - name: Build
+      run: npm run build
+      shell: bash
+
+    - name: Deploy
+      run: echo "Deploying!"
+      shell: bash
