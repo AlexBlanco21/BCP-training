@@ -16,6 +16,11 @@ inputs:
   artifact-path:
     description: "La ruta del artefacto a subir"
     required: false
+  
+  node-version:
+    description: "La versión de Node.js a usar"
+    required: true
+    default: "18"
 
 outputs:
   artifact-url:
@@ -25,6 +30,11 @@ outputs:
 runs:
   using: "composite"
   steps:
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ inputs.node-version }}
+        
     - name: Install Dependencies
       run: npm ci
       shell: bash

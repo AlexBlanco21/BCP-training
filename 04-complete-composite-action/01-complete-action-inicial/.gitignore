@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+.DS_Store
+
+.secrets
+.vars
+.env
+
+test-result/
+coverage/
